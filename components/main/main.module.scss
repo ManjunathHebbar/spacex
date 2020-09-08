@@ -1,0 +1,20 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+.filterContainer {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 25%;
+  }
+}
+
+.cardContainer {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+}

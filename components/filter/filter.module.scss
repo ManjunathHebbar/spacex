@@ -1,0 +1,53 @@
+.FilterContainer {
+  background-color: #ffff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  .secondTitle {
+    text-align: center;
+    color: #0645AD;
+    margin: 10px;
+    font-weight: 500;
+  }
+  .underScore {
+    border-bottom: 1px solid black;
+    width: 50%;
+    margin: 5px auto;
+  }
+  button {
+    background-color: #b3f765;
+    margin: 5px;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+  }
+  .yearContainer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    .year {
+      width: 80px;
+      @media (min-width: 768px) {
+        width: 50px;
+      }
+      @media (min-width: 1100px) {
+        width: 80px;
+      }
+    }
+    
+  }
+  .successLaunch {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    .bool {
+      width: 80px;
+    }
+  }
+}
