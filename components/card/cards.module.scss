@@ -7,10 +7,6 @@
     flex-direction: row;
     justify-content: flex-start;
   }
-  @media (min-width: 1100px) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }
 
 .CardContainer {
@@ -39,4 +35,11 @@
 
 .secondText {
  color: #0645AD
+}
+
+.noData {
+  display: flex;
+  margin: auto;
+  font-size: 25px;
+  font-weight: bold;
 }

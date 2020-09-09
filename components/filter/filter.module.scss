@@ -20,6 +20,10 @@
     padding: 5px;
     border: 0;
     border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #7ada0b;
   }
   .yearContainer {
     display: flex;

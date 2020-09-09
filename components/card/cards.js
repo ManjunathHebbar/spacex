@@ -5,7 +5,8 @@ import css from '../card/cards.module.scss'
 const cards = ({data}) => {
     return (
       <div className={css.mainContainer}>
-        {data !== [] && data.map((newData, i) => {
+        {data.length > 0 ? 
+        data.map((newData, i) => {
           return(
           <div key={newData.flight_number} className={css.CardContainer}>
             <img className={css.cardImage} src={newData.links.mission_patch_small} />
@@ -19,8 +20,11 @@ const cards = ({data}) => {
           <div><b>Successful Landing:</b> <span className={css.secondText}>{`{Launch Landing}`}</span>
           </div>
           </div>
-          )
-        })}
+          ) 
+        }) : (
+          <div className={css.noData}>No Data Available</div>
+        )
+      }
       </div>
     )
 }
